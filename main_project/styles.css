@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+body{
+  font-family: 'Roboto';
+}
+.icon{
+  width: 28px;
+}
+header{
+  display: flex;
+  justify-content:space-between;
+  padding: 10px 32px;
+}
+.searchwrapper{
+  display: flex;
+  gap: 16px;
+}
+.searchinput{
+  display:flex;
+  background: #eeeeee;
+  width: 650px;
+  border: 1px solid #eeeeee;
+  border-radius: 32px;
+}
+.searchinput input{
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  width: 85%;
+  border-radius: 32px 0 0 32px;
+}
+.searchinput img{
+  margin: auto;
+}
+.mic{
+  background: #eeeeee;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 10px;
+}
+.logowrapper{
+  display: flex;
+  align-items:center;
+  gap: 16px;
+}
+.buttonswrapper{
+  display:flex;
+  gap: 16px;
+}
+.buttonswrapper button{
+  border: none;
+  padding: 6px 20px;
+  border-radius: 32px;
+  font-weight: bold;  
+  display: flex;
+  align-items:center;
+  gap: 6px;
+}
+
+.main-content{
+  display:flex;
+}
+.sidebar{
+  padding: 8px;
+  font-size: 12px;
+  display:flex;
+  flex-direction:column;
+  gap: 32px;
+}
+.navItem{
+  text-align:center;
+}
+.navItem img{
+  width: 28px;
+}
+.videos-section{
+  width: 100%;
+  padding:8px 16px;
+}
+.pillsWrapper{
+  display:flex;
+  justify-content:space-between;
+}
+.pills{
+  background: #eeeeee;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight:450px;
+  font-size: 14px;
+}
+.active{
+  background: black;
+  color:white;
+}
+.video img{
+  width:100%;
+  border-radius:10px;
+  margin-top:4px;
+}
+.thumnailWrapper{
+  position: relative;
+}
+.thumnailWrapper p{
+  position:absolute;
+  color:white;
+  bottom: 12px;
+  right: 12px;
+  background:rgba(0, 0, 0, 0.41);
+  font-size: 14px;
+  padding: 2px, 4px;
+}
+.videoDetails{
+  display:flex;
+  gap: 20px;
+  justify-content:space-between;
+  align-items:start;
+  margin-top:8px;
+}
+.channelProfile{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+}
+.videoDetails h3{
+  font-size:16px;
+  margin-bottom: 4px;
+}
+.videoDetails p{
+  color:rgb(89, 89, 89);
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.videos-container{
+  padding: 16px 6px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 16px;
+}
+
+@media screen and (max-width: 700px){
+
+.sidebar{
+  display: none;
+}
+.buttonswrapper{
+  display:none;
+}
+.searchinput{
+  width:auto;
+}
+header{
+  padding: 8px;
+  gap: 10px;
+}
+header .logo{
+  width: 100px;
+}
+.pillsWrapper{
+  overflow-x:scroll;
+  gap: 4px;
+}
+.pills{
+  min-width:fit-content;
+}
+}
